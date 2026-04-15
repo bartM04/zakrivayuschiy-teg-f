@@ -129,7 +129,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
 }
 
 .card__icon-button {
@@ -258,14 +258,14 @@
   box-sizing: border-box;
   border: 2px solid var(--accent-color, #000);
   background-color: var(--bg-color, #fff);
-  min-inline-size: 341px;
+  inline-size: 100%;
   max-inline-size: 353px;
 }
 
 .dialog[open] {
   display: grid;
   gap: 30px;
-  padding-inline: clamp(30px, 26.4789px + 0.939vw, 40px);
+  padding-inline: 30px;
   padding-block: 30px;
 }
 
@@ -363,6 +363,14 @@
   .save-button .icon-save {
     inline-size: 28px;
     block-size: 28px;
+  }
+
+  .dialog {
+    max-inline-size: 341px;
+  }
+
+  .dialog[open] {
+    padding-inline: 40px;
   }
 }
 
